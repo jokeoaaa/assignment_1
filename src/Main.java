@@ -26,7 +26,7 @@ public class Main {
             String surname = parts[1];
             int age = Integer.parseInt(parts[2]);
             String genderString = parts[3];
-            List<Integer> grades=new ArrayList<Integer>();
+            List<Integer> grades=new ArrayList<>();
             for (int i = 4; i < parts.length; i++){
                 grades.add(Integer.parseInt(parts[i]));
             }
@@ -48,7 +48,7 @@ public class Main {
         for (Teacher teachers : group.getTeachers()) {
             teachers.giveRaise(years, percent);
             String raised = teachers.isRaised(years) ? ("'s salary have raised to " + teachers.getSalary()) : "'s salary still the same at " + teachers.getSalary();
-            System.out.println(teachers.getName() + " " + teachers.getSurname() + raised);;
+            System.out.println(teachers.getName() + " " + teachers.getSurname() + raised);
         
         }
     }
